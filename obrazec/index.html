@@ -1,0 +1,335 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Инструкция к ребёнку: образец</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<style>
+/* Layout: one paper column like a printed booklet; chapters with ink vignettes; parent-facing, child described in 3rd person */
+:root{--bg:#f3efe7;--fg:#2c2a26;--mut:#857e72;--line:#ddd6c9;--card:#faf7f2;--c:#6e8f5a;--c2:#8a6ba8;
+--serif:"Cormorant Garamond","Noto Serif",Georgia,serif;--sans:Manrope,"Noto Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1a18;--fg:#ece6da;--mut:#9b9388;--line:#38342f;--card:#242120;--c:#9cbd86;--c2:#b39ad0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c1a18;--fg:#ece6da;--mut:#9b9388;--line:#38342f;--card:#242120;--c:#9cbd86;--c2:#b39ad0;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.62}
+.w{max-width:680px;margin:0 auto;padding-block:28px 70px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--serif);font-weight:500;text-wrap:balance;margin:0}
+h1{font-size:clamp(38px,9.5vw,54px);line-height:1.04;margin:6px 0 12px}
+h2{font-size:clamp(30px,7.5vw,38px);line-height:1.08;margin:0 0 14px}
+h3{font-size:24px;line-height:1.15;margin:0 0 8px}
+p{margin:0 0 14px}
+.sample{display:flex;gap:10px;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--mut);border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:26px}
+.sample b{font-weight:600;color:var(--fg)}
+.kick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin:0}
+.cover{text-align:center;padding:10px 0 20px}
+.emb{display:block;width:72px;height:auto;margin:0 auto 10px}
+.duo{display:flex;justify-content:center;align-items:flex-end;margin:0 auto 10px}
+.duo img{width:min(220px,52vw);height:auto}.duo img.s{width:min(110px,26vw);margin-left:-14px}
+.cvh{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--c);margin:14px 0 6px}
+.ph{font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.3;max-width:28ch;margin:0 auto 18px}
+.meta{font-size:13.5px;color:var(--mut)}
+.toc{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;font-size:14.5px;text-align:left}
+.toc a{display:flex;align-items:center;gap:8px;color:var(--fg);text-decoration:none;border-bottom:1px solid var(--line)}.toc a:hover{border-color:var(--fg)}
+.toc a img{width:22px;height:22px;object-fit:contain;flex:none}
+.toc span{color:var(--mut);font-variant-numeric:tabular-nums}
+section{padding-top:48px}
+section+section::before{content:"";display:block;width:84px;height:16px;margin:0 auto 34px;background:url(b-strong.webp) left center/16px no-repeat,url(b-strong.webp) center/16px no-repeat,url(b-strong.webp) right center/16px no-repeat;opacity:.55}
+.vig{display:block;max-height:170px;width:auto;max-width:100%;margin:0 0 12px}
+.chn{display:flex;align-items:center;gap:10px}.chn img{width:30px;height:30px;object-fit:contain}
+.lead{font-size:17.5px}
+.ax{display:flex;flex-direction:column;gap:22px;margin-top:18px}
+.axr{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
+.axr img{width:40px;height:40px}
+.axr b{font-family:var(--serif);font-size:22px;font-weight:600;line-height:1.1}
+.cells{display:grid;grid-template-columns:repeat(3,1fr) 10px repeat(3,1fr);gap:4px;margin:8px 0 4px}
+.cells i{height:9px;border-radius:3px;background:var(--line)}.cells i.mid{background:none}.cells i.f{background:var(--c)}
+.ends{display:flex;justify-content:space-between;font-size:13px;color:var(--mut)}.ends .on{color:var(--fg);font-weight:600}
+.axr p{margin:6px 0 0;font-size:15px}
+.list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.list li{padding-left:30px;position:relative}
+.list li b{display:block;font-weight:600}
+.list li::before,.mk li::before{content:"";position:absolute;left:0;top:.2em;width:18px;height:18px;background:center/contain no-repeat}
+.list li::before{background-image:url(b-strong.webp)}
+.list.warm li::before{background:var(--fg);height:7px;width:7px;top:.62em;left:3px;transform:rotate(45deg)}
+.mk{list-style:none;margin:0;padding:0}.mk li{position:relative;padding-left:28px;margin-bottom:12px}.mk li:last-child{margin-bottom:0}
+.mk:not(.yes):not(.no) li::before{background:var(--fg);height:7px;width:7px;top:.62em;left:3px;transform:rotate(45deg)}
+.mk.yes li::before{background-image:url(b-yes.webp)}.mk.no li::before{background-image:url(b-no.webp)}
+.card{background:var(--card);border-radius:20px;padding:20px 20px 16px;margin:18px 0}
+.card>.kick{margin-bottom:12px;font-family:var(--serif);font-size:23px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--fg);line-height:1.15}
+.share{background:var(--card);border-radius:20px;padding:20px}
+.share q{display:block;quotes:none;font-family:var(--serif);font-size:21px;line-height:1.35;margin-bottom:16px}
+.sendl{display:flex;gap:12px;align-items:flex-start}.sendl img{width:34px;height:34px;margin-top:-4px;object-fit:contain;flex:none}
+.cpy{font:600 13px var(--sans);padding:8px 14px;border-radius:10px;border:0;background:var(--line);color:var(--fg);cursor:pointer;margin-top:14px}
+.day{display:grid;grid-template-columns:150px 1fr;gap:20px 14px;font-size:16px;margin:0}
+.day dt{display:flex;gap:10px;align-items:flex-start;font-family:var(--serif);font-size:20px;font-weight:600;line-height:1.2}
+.day dt img{width:34px;height:34px;flex:none;object-fit:contain;margin-top:-6px}
+.day dd{margin:0}
+.sc{border-top:1px solid var(--line);padding:18px 0 4px}
+.sc h3{margin-bottom:6px}
+.sc .why{color:var(--mut);font-size:15px}
+.sc dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;margin:10px 0 0}
+.sc dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding-top:3px}
+.sc dd{margin:0}
+.sc dd.say{font-family:var(--serif);font-size:20px;line-height:1.3}
+.road{display:block;width:120px;height:auto;margin:0 0 14px}
+.weeks{display:flex;flex-direction:column;gap:22px;margin-top:10px}
+.wk h3{display:flex;gap:10px;align-items:center}.wk h3 img{width:30px;height:30px;object-fit:contain}
+.wk h3 small{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.wk>p{color:var(--mut);font-size:14.5px;margin-bottom:10px}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px;cursor:pointer}
+.chk input{margin:4px 0 0;width:18px;height:18px;accent-color:var(--c);flex:none}
+.chk input:checked+span{color:var(--mut);text-decoration:line-through}
+.prog{font-size:13px;color:var(--mut);margin:12px 0 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 22px;text-align:center}
+.steps img{width:100%;height:auto;display:block;margin:0 auto 6px}.steps b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}.steps span{font-size:14px;line-height:1.35;display:block}
+.prm{display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:16px;margin:0 0 12px;background:var(--card)}
+.prm small{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.15}
+.prm small img{width:30px;height:30px;object-fit:contain}
+.prm q{quotes:none;font-size:15px}
+.prm button{align-self:flex-start;font:600 13px var(--sans);padding:7px 14px;border-radius:10px;border:0;background:var(--line);color:var(--fg);cursor:pointer}
+.help{font-size:15px}
+.phones{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14.5px;margin:10px 0 0}
+.phones b{font-variant-numeric:tabular-nums;white-space:nowrap}.phones span{color:var(--mut)}
+.phones h4{grid-column:1/-1;margin:10px 0 0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.foot{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+.hp{margin-left:-.42em}
+@media (max-width:460px){.toc{grid-template-columns:1fr}.day{grid-template-columns:1fr;row-gap:4px}.day dd{margin:0 0 14px 44px}.sc dl{grid-template-columns:1fr;gap:2px}.sc dd{margin-bottom:8px}}
+/* watercolor set: paper cut to transparency at build time; in dark theme scenes sit on a light card, small icons stay as they are */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) :is(.vig,.cover img:not(.emb)){background-color:#f3efe7;border-radius:14px;padding:8px}}
+:root[data-theme="dark"] :is(.vig,.cover img:not(.emb)){background-color:#f3efe7;border-radius:14px;padding:8px}
+
+@media print{.cpy,.prm button{display:none}}
+</style>
+
+<div class="w">
+<div class="sample"><span><b>Образец платной инструкции.</b> Пример на вымышленном ребёнке.</span><span>15–20 страниц в PDF</span></div>
+
+<div class="cover">
+<p class="kick">Инструкция к ребёнку · Миша, 9 лет</p>
+<img class="emb" src="emblem.webp" alt="">
+<div class="duo"><img src="cham-m.webp" alt="Мальчик примеряет шляпы перед зеркалом"><img class="s" src="seis-m.webp" alt=""></div>
+<p class="cvh">Как Миша устроен сейчас</p>
+<h1>Хамелеон с чертами Сейсмографа</h1>
+<p class="ph">«В школе всё нормально». А дома, через полчаса, слёзы из-за носка.</p>
+<p class="meta">Составлено по 27 ответам мамы · это не диагноз и не предсказание, а описание того, как Мише легче сейчас</p>
+<ol class="toc">
+<li><a href="#how"><img src="c-1.webp" alt=""><span>1</span>Как Миша устроен</a></li>
+<li><a href="#strong"><img src="c-2.webp" alt=""><span>2</span>В чём его сила</a></li>
+<li><a href="#tired"><img src="c-3.webp" alt=""><span>3</span>Где он устаёт</a></li>
+<li><a href="#school"><img src="c-4.webp" alt=""><span>4</span>Для учителя и тренера</a></li>
+<li><a href="#family"><img src="c-5.webp" alt=""><span>5</span>Для семьи</a></li>
+<li><a href="#day"><img src="c-6.webp" alt=""><span>6</span>Хороший школьный день</a></li>
+<li><a href="#hard"><img src="c-7.webp" alt=""><span>7</span>Трудные моменты</a></li>
+<li><a href="#plan"><img src="c-8.webp" alt=""><span>8</span>План на месяц</a></li>
+</ol>
+</div>
+
+<section id="how">
+<img class="vig" src="r-scales.webp" alt="">
+<p class="kick chn"><img src="c-1.webp" alt="">Глава 1</p>
+<h2>Как Миша устроен сейчас</h2>
+<p class="lead">Миша очень старается быть «правильным» там, где на него смотрят чужие взрослые. Он тонко чувствует, чего от него ждут, и подстраивается. В школе это выглядит как идеальное поведение. Но эта работа стоит сил, и выдыхает он дома, рядом с теми, с кем безопасно.</p>
+<p>Вдобавок Миша остро слышит и чувствует: шум столовой, колючий шов, раздражение учителя. К концу дня всё это складывается в перегрузку.</p>
+<p>Ниже девять шкал. Ни один край не лучше другого: это направление, куда Мишу сейчас тянет. Через полгода картина может измениться.</p>
+<img class="vig" src="s-seesaw.webp" alt="" style="margin:6px auto 4px;max-height:200px">
+<div class="ax" id="axes"></div>
+</section>
+
+<section id="strong">
+<img class="vig" src="t-cham-strong.webp" alt="Мальчик и девочка примеряют шляпы перед зеркалом">
+<p class="kick chn"><img src="c-2.webp" alt="">Глава 2</p>
+<h2>В чём его сила</h2>
+<ul class="list">
+<li><b>Понимает людей.</b> Миша быстро замечает, кто расстроен, кто злится, кому нужна помощь. Взрослые часто удивляются, как точно он «читает» обстановку.</li>
+<li><b>Умеет договориться.</b> Он мирит друзей, находит, во что играть всем, и редко ссорится с учителями.</li>
+<li><b>Замечает детали.</b> Новую причёску у бабушки, фальшивую ноту, то, что в классе переставили парты.</li>
+<li><b>Старается.</b> Ему важно сделать хорошо и не подвести. Это настоящая черта характера, а не страх, если взрослые не превращают её в страх.</li>
+<li><b>Добрый к слабым.</b> Сейсмографы часто первыми видят, что кого-то обижают.</li>
+</ul>
+</section>
+
+<section id="tired">
+<img class="vig" src="t-cham-tired.webp" alt="Мальчик и девочка сидят у двери, сняв шляпы">
+<p class="kick chn"><img src="c-3.webp" alt="">Глава 3</p>
+<h2>Где он устаёт</h2>
+<p>Это не недостатки, а цена его силы. Если знать её заранее, Мише можно помочь платить меньше.</p>
+<ul class="list warm">
+<li><b>Весь день «держаться».</b> Шесть уроков быть удобным, тихим, правильным. Это как весь день стоять на цыпочках.</li>
+<li><b>Шум и суета.</b> Столовая, перемена, продлёнка, праздник в классе. Силы уходят, даже когда весело.</li>
+<li><b>Когда что-то неприятно, а сказать нельзя.</b> Невкусная еда, обидное слово, слишком строгий тон. Миша промолчит, а вечером это выйдет слезами.</li>
+<li><b>Когда ему не верят.</b> «В школе же всё хорошо, это ты дома капризничаешь». Для него это хуже любой усталости.</li>
+<li><b>Неожиданные перемены.</b> Замена учителя, отменённая тренировка, гости без предупреждения.</li>
+</ul>
+<p style="margin-top:18px">Что взрослые часто понимают не так: <b>«дома распустился»</b>. На самом деле дома он наконец может не держаться. Если ребёнок «разваливается» именно с вами, это знак доверия, а не плохого воспитания.</p>
+</section>
+
+<section id="school">
+<img class="vig" src="ch-work.webp" alt="">
+<p class="kick chn"><img src="c-4.webp" alt="">Глава 4</p>
+<h2>Для учителя и тренера</h2>
+<p class="sendl"><img src="send.webp" alt="">Эту страницу можно переслать классному руководителю или тренеру. Она написана для них, без медицинских слов.</p>
+<div class="share" id="note">
+<q>«Миша очень старается быть правильным, и по нему может быть не видно, что ему тяжело. Если что-то неприятно, он скорее промолчит, чем скажет».</q>
+<ul class="mk">
+<li>Если можно, спрашивайте его наедине, всё ли в порядке. При всех он скажет «нормально».</li>
+<li>Предупреждайте о переменах заранее: замена, контрольная, праздник.</li>
+<li>Посадите его подальше от двери и шумного прохода.</li>
+<li>Если он вдруг плачет или замыкается, чаще всего это перегрузка, а не плохое поведение. Помогает минута тишины, а не разговор при классе.</li>
+<li>Если что-то случилось, напишите нам. Он сам может не рассказать.</li>
+</ul>
+<button type="button" class="cpy" data-src="note">Скопировать текст для учителя</button>
+</div>
+</section>
+
+<section id="family">
+<img class="vig" src="ch-close.webp" alt="">
+<p class="kick chn"><img src="c-5.webp" alt="">Глава 5</p>
+<h2>Для семьи</h2>
+<p>Для папы, бабушки, няни: всех, кто бывает с Мишей после школы.</p>
+<div class="card">
+<p class="kick">Что помогает</p>
+<ul class="mk yes">
+<li>Первые полчаса после школы ничего не спрашивать и не требовать. Перекус, тишина, можно полежать.</li>
+<li>Спрашивать не «как дела», а «что сегодня было самым трудным» и «что было смешным».</li>
+<li>Называть чувство вслух: «Похоже, ты сегодня очень устал».</li>
+<li>Предупреждать о гостях и поездках заранее.</li>
+<li>Говорить ему: «Со мной можно не стараться».</li>
+</ul>
+</div>
+<div class="card">
+<p class="kick">Что лучше не делать</p>
+<ul class="mk no">
+<li>Наказывать за вечернюю вспышку. Это усталость, а не непослушание.</li>
+<li>Говорить «в школе же ты можешь себя вести».</li>
+<li>Объяснять и воспитывать во время слёз. Сначала успокоить, обсудить потом.</li>
+<li>Хвалить за удобство: «молодец, что не капризничал». Он и так слишком старается быть удобным.</li>
+</ul>
+</div>
+</section>
+
+<section id="day">
+<img class="vig" src="ch-day.webp" alt="">
+<p class="kick chn"><img src="c-6.webp" alt="">Глава 6</p>
+<h2>Хороший школьный день</h2>
+<p>Это не расписание, а пример дня, после которого у Миши и у вас остаются силы.</p>
+<dl class="day">
+<dt><img src="d-morning.webp" alt="">Утро</dt><dd>Портфель и одежда собраны с вечера. За завтраком два слова о том, что будет сегодня, особенно если что-то необычное.</dd>
+<dt><img src="d-desk.webp" alt="">В школе</dt><dd>Мягкая одежда без колючих швов. Если можно, наушники или беруши в кармане для продлёнки.</dd>
+<dt><img src="d-pause.webp" alt="">После школы</dt><dd>Полчаса тишины: перекус, свой угол, никаких вопросов про оценки.</dd>
+<dt><img src="d-quiet.webp" alt="">Уроки</dt><dd>После паузы, а не сразу. Вы рядом, но не над душой.</dd>
+<dt><img src="d-evening.webp" alt="">Вечер</dt><dd>Десять минут только вдвоём, без телефона. Здесь он обычно и рассказывает, что было на самом деле.</dd>
+</dl>
+</section>
+
+<section id="hard">
+<img class="vig" src="r-week.webp" alt="">
+<p class="kick chn"><img src="c-7.webp" alt="">Глава 7</p>
+<h2>Трудные моменты</h2>
+<p>Четыре ситуации, которые чаще всего случаются с такими детьми, и что в них помогает.</p>
+<div id="scenes"></div>
+</section>
+
+<section id="plan">
+<p class="kick chn"><img src="c-8.webp" alt="">Глава 8</p>
+<h2>План на месяц</h2>
+<p>Для вас, а не для Миши. По одному шагу в день, около 10 минут. Отмечайте сделанное, страница это запомнит. Пропуски нормальны.</p>
+<img class="road" src="s-road.webp" alt="Дорога с четырьмя верстовыми столбами">
+<div class="weeks" id="weeks"></div>
+<p class="prog" id="prog"></p>
+
+<h3 style="margin-top:40px">Где поможет ИИ</h3>
+<p>Скопируйте фразу, откройте любой ИИ-чат (Claude, ГигаЧат, Алису) и замените слова в квадратных скобках. В полной версии таких фраз пятнадцать, здесь четыре.</p>
+<div class="steps">
+<div><img src="ai-step-1.webp" alt=""><b>Шаг 1</b><span>Скопируйте фразу</span></div>
+<div><img src="ai-step-2.webp" alt=""><b>Шаг 2</b><span>Вставьте в чат ИИ</span></div>
+<div><img src="ai-step-3.webp" alt=""><b>Шаг 3</b><span>Замените слова в скобках</span></div>
+</div>
+<div id="prompts"></div>
+</section>
+
+<section id="help" class="help">
+<img class="vig" src="ch-end.webp" alt="Мальчик и девочка машут рукой у калитки">
+<p style="margin:0 0 30px">Это вся инструкция. Возвращайтесь к ней, когда что-то меняется. Через полгода тест можно пройти ещё раз: дети растут, и картина может стать другой.</p>
+<img class="vig" src="help.webp" alt="">
+<h2>Когда стоит поговорить со специалистом</h2>
+<p>Этот блок одинаковый для всех детей и не зависит от результата. Тест не видит СДВГ, аутизм, тревожное расстройство и другие особенности и не может их исключить.</p>
+<p>Поводом сходить к педиатру или детскому психологу будет, если Миша постоянно держится через силу, часто жалуется на живот или голову перед школой, плохо спит, отказывается ходить в школу или говорит о себе плохо. Начать можно с педиатра: он посмотрит ребёнка целиком и при необходимости направит дальше. По полису ОМС это бесплатно. Ещё есть бесплатные психолого-педагогические центры (ППМС) в каждом регионе.</p>
+<p>Если сейчас тяжело вам или ребёнку, поговорить можно прямо сейчас, бесплатно и анонимно:</p>
+<div class="phones">
+<h4>Россия</h4>
+<b><a href="tel:88002000122" style="color:inherit;text-decoration:none">8 800 2000-122</a></b><span>детский телефон доверия: для детей, подростков и родителей, бесплатно</span>
+<b><a href="tel:88006003114" style="color:inherit;text-decoration:none">8 800 600-31-14</a></b><span>линия психологической помощи Минпросвещения (МГППУ) для детей и родителей, бесплатно, круглосуточно</span>
+<b><a href="tel:88003334434" style="color:inherit;text-decoration:none">8 800 333-44-34</a></b><span>кризисная линия телефона доверия для взрослых, бесплатно, круглосуточно</span>
+<b><a href="tel:84959895050" style="color:inherit;text-decoration:none">8 495 989-50-50</a></b><span>экстренная психологическая помощь МЧС, круглосуточно</span>
+<h4>Казахстан</h4>
+<b><a href="tel:111" style="color:inherit;text-decoration:none">111</a></b><span>единый контакт-центр: семья, дети, насилие, круглосуточно, бесплатно</span>
+<b><a href="tel:150" style="color:inherit;text-decoration:none">150</a></b><span>телефон доверия для детей и молодёжи</span>
+<b><a href="tel:1303" style="color:inherit;text-decoration:none">1303</a></b><span>Центр психического здоровья, Алматы</span>
+<h4>Если есть угроза жизни</h4>
+<b><a href="tel:112" style="color:inherit;text-decoration:none">112</a></b><span>Россия и Казахстан, круглосуточно</span>
+</div>
+</section>
+
+<p class="foot">Инструкция к ребёнку · первая версия. Это описание того, как ребёнку легче сейчас, а не диагноз. Образец составлен для вымышленного ребёнка; в настоящей инструкции тексты подбираются под ваши ответы.</p>
+</div>
+
+<script>
+const AX=[
+['attention','Внимание','погружается','переключается',-1,'Может долго заниматься тем, что нравится, особенно в тишине.'],
+['start','Запуск','начинает сам','от срочности',0,'Начинает по-разному: что-то сам, что-то после напоминания. Обычно для его возраста.'],
+['body','Тело','сидеть легко','нужно двигаться',0,'Сидеть может, но после школы телу нужна пауза.'],
+['senses','Ощущения','фон не мешает','чувствует всё',2,'Замечает шум, свет, швы на одежде и настроение людей. Это даёт точность, но к вечеру перегружает.'],
+['talk','Общение','идёт легко','через усилие',2,'С людьми ладит, но каждый разговор с чужими взрослыми для него работа.'],
+['think','Мышление','схемы и правила','образы и истории',1,'Понимает лучше через пример и картинку, чем через сухое правило.'],
+['ideas','Идеи','доводит одно','много идей',0,'Посередине: и придумывает, и доделывает.'],
+['stage','Сцена','в тени','на виду',-1,'Не рвётся на сцену. Похвала при всех смущает, наедине радует.'],
+['hidden','Где видна усталость','видно снаружи','держится, а устаёт внутри',3,'Самая яркая шкала. Снаружи всё хорошо, а цена приходит дома. Отсюда «в школе идеальный, дома другой ребёнок».']];
+const cells=v=>{let o='';for(let i=0;i<6;i++){if(i===3)o+='<i class="mid"></i>';const f=v<0?(i<3&&i>=3+v):(i>=3&&i-3<v);o+='<i'+(f?' class="f"':'')+'></i>'}return '<div class="cells" aria-hidden="true">'+o+'</div>'};
+document.getElementById('axes').innerHTML=AX.map(([ic,n,l,r,v,t])=>'<div class="axr"><img src="ax-'+ic+'.webp" alt=""><div><b>'+n+'</b>'+cells(v)+'<div class="ends"><span'+(v<0?' class="on"':'')+'>'+l+'</span><span'+(v>0?' class="on"':'')+'>'+r+'</span></div><p>'+t+'</p></div></div>').join('');
+
+const SC=[
+['Вспышка после школы','Пришёл, увидел не ту тарелку, и слёзы. Причина не в тарелке: весь день он держался, и запас кончился.',
+ 'Не спорить о тарелке. Сесть рядом, говорить мало и спокойно.','«Ты очень устал сегодня. Я рядом. Поговорим потом»','«Из-за ерунды? В школе же ты нормальный»'],
+['«Не пойду в школу»','Чаще всего за этим стоит что-то конкретное: шумная столовая, обидное слово, страх ошибиться у доски.',
+ 'Выяснить вечером, в спокойный момент, что именно трудно. Утром только поддержка.','«Что там самое тяжёлое? Давай подумаем, что можно с этим сделать»','«Все ходят, и ты пойдёшь, хватит придумывать»'],
+['Обидели, а он молчит','Хамелеоны редко жалуются сразу. Признаки косвенные: стал тише, «болит живот», не хочет на продлёнку.',
+ 'Спросить не в лоб, а через историю или игру. Дать понять, что вы не побежите сразу «разбираться».','«Бывает, что кто-то говорит обидное. Если так будет, мне можно рассказать, и я сначала просто выслушаю»','«Ну и не обращай внимания»'],
+['Праздник, гости, день рождения','Шум, много людей и надо быть вежливым. Двойная нагрузка, даже если очень хотел пойти.',
+ 'Предупредить заранее, договориться о тайном знаке «мне много», уйти чуть раньше, чем станет плохо.','«Если станет слишком шумно, покажи знак, и мы выйдем подышать»','«Не позорь меня, посиди ещё»']];
+document.getElementById('scenes').innerHTML=SC.map(([t,w,d,s,n])=>'<div class="sc"><h3>'+t+'</h3><p class="why">'+w+'</p><dl><dt>Что делать</dt><dd>'+d+'</dd><dt>Сказать</dt><dd class="say">'+s+'</dd><dt>Не говорить</dt><dd>'+n+'</dd></dl></div>').join('');
+
+const W=[
+['Неделя 1','Тишина после школы','Дать Мише полчаса без вопросов и посмотреть, что изменится вечером.',
+ ['Предупредите семью: первые полчаса после школы без расспросов','Приготовьте перекус, который можно взять самому','Найдите в квартире его «тихий угол»','Записывайте, в какие дни вечер прошёл спокойно','Спросите вечером: «что было самым трудным?»','Один раз назовите его чувство вслух','В конце недели сравните вечера с прошлой неделей']],
+['Неделя 2','Меньше шума','Собрать для Миши свою «аптечку» от перегрузки.',
+ ['Уберите из гардероба одну самую колючую вещь','Положите в рюкзак наушники или беруши','Придумайте вместе тайный знак «мне слишком много»','Один раз уйдите с шумного места раньше, чем начнутся слёзы','Приглушите свет вечером на час перед сном','Предупредите о выходных заранее','Отметьте, после чего силы кончились быстрее всего']],
+['Неделя 3','Союз со школой','Сделать так, чтобы учитель видел то же, что и вы.',
+ ['Перешлите учителю главу 4','Спросите учителя, когда Миша бывает самым тихим','Расскажите Мише, что учитель теперь знает, что ему помогает','Похвалите не за «удобство», а за конкретное дело','Спросите Мишу, какой урок самый шумный','Придумайте вместе, что можно делать на шумной перемене','Отметьте, стало ли меньше вечерних вспышек']],
+['Неделя 4','Закрепить','Оставить то, что сработало, и убрать остальное.',
+ ['Перечитайте свои отметки за три недели','Выберите три привычки, которые оставите','Расскажите папе или бабушке, что поменялось','Скажите Мише: «Со мной можно не стараться»','Уберите одну привычку, которая не прижилась','Запишите, что ещё хотите попробовать','Отдохните сами: это тоже часть инструкции']]];
+let st={};try{st=JSON.parse(localStorage.getItem('ikr-plan')||'{}')}catch(e){}
+document.getElementById('weeks').innerHTML=W.map(([w,t,s,items],wi)=>'<div class="wk"><h3><img src="w-'+(wi+1)+'.webp" alt=""><small>'+w+'</small>'+t+'</h3><p>'+s+'</p>'+items.map((x,i)=>{const id='d'+wi+'-'+i;return '<label class="chk"><input type="checkbox" id="'+id+'"'+(st[id]?' checked':'')+'><span>'+x+'</span></label>'}).join('')+'</div>').join('');
+const total=W.reduce((a,w)=>a+w[3].length,0);
+const prog=()=>{const n=Object.values(st).filter(Boolean).length;document.getElementById('prog').textContent='Отмечено '+n+' из '+total+'.'};prog();
+document.getElementById('weeks').addEventListener('change',e=>{if(e.target.type!=='checkbox')return;st[e.target.id]=e.target.checked;try{localStorage.setItem('ikr-plan',JSON.stringify(st))}catch(err){}prog()});
+
+const P=[
+['Разговор с учителем','bridge','Помоги подготовиться к разговору с учителем о моём сыне, 9 лет. В школе он держится идеально, а дома плачет из-за мелочей. Я хочу попросить [о чём]. Предложи спокойные короткие фразы и как ответить, если скажут «у нас с ним всё хорошо».'],
+['Что за этим стоит','hint','Мой сын сказал: [что сказал]. Он обычно не жалуется прямо. Предложи, что может стоять за этими словами, и три мягких вопроса, которые можно задать вечером.'],
+['Сказка на ночь','deep','Придумай короткую сказку на 5 минут для мальчика 9 лет про героя, который весь день старался быть удобным для всех, а вечером нашёл место, где можно быть собой. Без морали в конце.'],
+['Перегрузка','sieve','В субботу у нас [праздник, поездка]. Ребёнок быстро устаёт от шума и людей. Составь план дня с паузами и придумай, как уйти пораньше, никого не обидев.']];
+document.getElementById('prompts').innerHTML=P.map(([t,ic,q],i)=>'<div class="prm"><small><img src="ai-'+ic+'.webp" alt="">'+t+'</small><q id="q'+i+'">'+q+'</q><button type="button" data-i="'+i+'">Скопировать</button></div>').join('');
+function copy(txt,btn,el){const o=btn.textContent;const done=()=>{btn.textContent='Скопировано';setTimeout(()=>{btn.textContent=o},1600)};const sel=()=>{const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)};try{navigator.clipboard.writeText(txt.replace(/ /g,' ')).then(done,()=>{sel();done()})}catch(err){sel();done()}}
+document.getElementById('prompts').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const q=document.getElementById('q'+b.dataset.i);copy(q.textContent,b,q)});
+document.querySelector('.cpy').addEventListener('click',e=>{const el=document.getElementById('note');const txt=[el.querySelector('q').textContent,...[...el.querySelectorAll('li')].map(l=>'— '+l.textContent)].join('\n');copy(txt,e.currentTarget,el)});
+/* типограф, как в «Инструкции к себе» */
+(()=>{const N=' ',SH='в|во|без|до|из|к|ко|на|по|о|об|обо|от|перед|при|через|с|со|у|за|над|под|про|для|и|а|но|да|или|ли|не|ни|что|как|это|то|я|ты|мы|вы|он|она|они|его|её|их|мне|мой|моя|все|всё|уже|чем|так|там|тут|кто|где|если|чтобы|раз';
+const reShort=new RegExp('(^|[\\s'+N+'(«„])('+SH+')\\s+(?=\\S)','giu');
+const fix=s=>{let p;do{p=s;s=s.replace(reShort,(m,a,w)=>a+w+N)}while(s!==p);
+ return s.replace(/\s+—\s*/g,N+'— ').replace(/\s+(же|ли|бы)(?=[\s.,!?:;»]|$)/giu,N+'$1').replace(/(\d)\s+(?=[\p{L}%₽])/gu,'$1'+N)};
+const skip=/^(SCRIPT|STYLE|BUTTON)$/;
+const walk=el=>{for(const n of [...el.childNodes]){if(n.nodeType===3)n.nodeValue=fix(n.nodeValue);else if(n.nodeType===1&&!skip.test(n.tagName))walk(n)}};
+walk(document.body);
+document.querySelectorAll('p,q,li,dd,h1,h2,h3,label span').forEach(e=>{const t=e.firstChild;if(t&&t.nodeType===3&&/^\s*«/.test(t.nodeValue)&&getComputedStyle(e).textAlign!=='center'){const i=t.nodeValue.indexOf('«');const s=document.createElement('span');s.className='hp';s.textContent='«';t.nodeValue=t.nodeValue.slice(i+1);e.insertBefore(s,t)}});
+})();
+</script>
+
+</body></html>
